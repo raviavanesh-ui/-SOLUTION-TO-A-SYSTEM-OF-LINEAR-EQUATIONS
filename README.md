@@ -18,18 +18,23 @@ End the program
 #Program to find the solution for the given linear equations.
 #Developed by: avanesh.r
 #RegisterNumber:212225240018
-import os
-os.environ["OPENBLAS_NUM_THREADS"]="1"
 import numpy as np
-a=np.array([[1,-3],[3,1]])
-b=np.array([0,10])
-x=np.linalg.solve(a,b)
-print(x)
+
+# Coefficient matrix
+A = np.array([[1, 3],
+              [2, 5]])
+
+# Constant matrix
+B = np.array([5, -3])
+
+# Solve the system
+solution = np.linalg.solve(A, B)
+
+print(solution)
 ```
-    
 ## Output:
 
-<img width="411" height="161" alt="Screenshot 2026-05-21 140159" src="https://github.com/user-attachments/assets/c814cc2e-2b5b-434a-b2bc-ef13a3f646ef" />
+<img width="1229" height="781" alt="Screenshot 2026-05-14 103427" src="https://github.com/user-attachments/assets/4b5e5891-56ca-4ff7-ba94-bc1e487cda3a" />
 
 
 ## Result: 
